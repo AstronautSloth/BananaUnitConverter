@@ -9,6 +9,8 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+
+    <preference name="DisallowOverscroll" value="true" />
     
     <platform name="android">
 			<splash src="www/img/splashscreen.png" />
