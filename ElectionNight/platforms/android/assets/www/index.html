@@ -25,14 +25,55 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Hello World</title>
+        <title>Timer</title>
     </head>
+	
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
+        <div class="frame">
+            <div class="banana unit">
+                <h2>Banana Units</h2>
+                <select>
+                    <option value="distance">Bananas</option>
+                    <option value="speed">Bananas/Second</option>
+                    <option value="volume">Cubic Banans</option>
+                    <option value="time">Banana Time</option>
+                    <option value="energy">Nanners</option>
+                    <option value="mass">Banana Heavies</option>
+                </select>
+                <input class="val" type="number" name="value" maxlength="20" />
+                <br />
+                <button class="calc" type="button">Calculate</button>
+                <p class="Bunits"></p>
+            </div>
+            <div class="metric unit">
+                <h2>Metric Units</h2>
+                <select>
+                    <option value="distance">Meters</option>
+                    <option value="speed">Meters/Second</option>
+                    <option value="volume">Milliliters</option>
+                    <option value="time">Seconds</option>
+                    <option value="energy">Kilojoules</option>
+                    <option value="mass">Grams</option>
+                </select>
+                <input class="val" type="number" name="value" maxlength="20" />
+                <br />
+                <button class="calc" type="button">Calculate</button>
+                <p class="Munits"></p>
+            </div>
+            <div class="imperial unit">
+                <h2>Imperial Units</h2>
+                <select>
+                    <option value="distance">Feet</option>
+                    <option value="speed">Feet/second</option>
+                    <option value="volume">Cups</option>
+                    <option value="time">Seconds</option>
+                    <option value="energy">Kilojoules</option>
+                    <option value="mass">Ounces</option>
+                </select>
+                <input class="val" type="number" name="value" maxlength="20" />
+                <br />
+                <button class="calc" type="button">Calculate</button>
+                <p class="Iunits"></p>
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
