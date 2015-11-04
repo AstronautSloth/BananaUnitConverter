@@ -9,4 +9,13 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    
+    <platform name="android">
+			<splash src="www/img/splashscreen.png" />
+			<icon src="www/img/splashscreen.png" />
+		</platform>
+		<platform name="ios">
+			<splash src="www/img/splashscreen.png" width="320" height="480" />
+			<icon src="www/img/splashscreen.png" />
+		</platform>
 </widget>
